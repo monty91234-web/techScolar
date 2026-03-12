@@ -1,0 +1,1289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thesis & Dissertation Writing - Tech Scholar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/font-awesome-all.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/style_1.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #f6f7fb;
+        color: #1f2937;
+      }
+
+      /* Hero Section */
+      .hero-section {
+        background: linear-gradient(135deg, #1a2332, #0f1621);
+        color: #fff;
+        padding: 100px 20px;
+      }
+
+      .hero-content {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .hero-badge {
+        background: rgba(255, 193, 7, 0.1);
+        padding: 8px 18px;
+        border-radius: 25px;
+        font-size: 13px;
+        color: #ffc107;
+        display: inline-block;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .hero-section h1 {
+        font-size: 56px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.2;
+        color: #ffc107;
+      }
+
+      .hero-section p {
+        font-size: 18px;
+        max-width: 650px;
+        opacity: 0.9;
+        line-height: 1.6;
+        margin-bottom: 35px;
+      }
+
+      .hero-buttons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .btn-primary {
+        background: #ffc107;
+        color: #1a2332;
+        padding: 14px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .btn-primary:hover {
+        background: #ffb300;
+        transform: translateY(-2px);
+      }
+
+      .btn-whatsapp {
+        background: #25d366;
+        color: #fff;
+        padding: 14px 30px;
+        border: none;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .btn-whatsapp:hover {
+        background: #20ba5a;
+        transform: translateY(-2px);
+      }
+
+      /* Features Section */
+      .features-section {
+        padding: 80px 20px;
+        background: #f5f5f5;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .section-label {
+        color: #ffc107;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .section-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #1a2332;
+        margin-bottom: 15px;
+      }
+
+      .section-description {
+        font-size: 16px;
+        color: #6b7280;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      .feature-card {
+        background: #fff;
+        padding: 35px 30px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        background: #fff4e0;
+        color: #ffc107;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0 auto 20px;
+      }
+
+      .feature-card h4 {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1a2332;
+        margin-bottom: 12px;
+      }
+
+      .feature-card p {
+        font-size: 14px;
+        color: #6b7280;
+        line-height: 1.6;
+      }
+
+      /* Process Section */
+      .process-section {
+        padding: 80px 20px;
+        background: #fff;
+      }
+
+      .process-list {
+        list-style: none;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .process-item {
+        background: #f9fafb;
+        padding: 22px 25px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        transition: all 0.3s;
+      }
+
+      .process-item:hover {
+        background: #fff4e0;
+        transform: translateX(8px);
+      }
+
+      .process-number {
+        background: #ffc107;
+        color: #1a2332;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 16px;
+        flex-shrink: 0;
+      }
+
+      .process-item span {
+        font-size: 16px;
+        color: #374151;
+        font-weight: 400;
+      }
+
+      /* FAQ Section */
+      .faq-section {
+        padding: 80px 20px;
+        background: #f5f5f5;
+      }
+
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        background: #fff;
+        padding: 25px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: relative;
+      }
+
+      .faq-item:hover {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .faq-item h5 {
+        font-size: 17px;
+        font-weight: 600;
+        color: #1a2332;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .faq-item h5::after {
+        content: "+";
+        color: #ffc107;
+        font-size: 24px;
+        font-weight: 400;
+        right: 0;
+        position: absolute;
+        transition: transform 0.3s ease;
+      }
+      .faq-item p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #6b7280;
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.3s ease,
+          padding 0.3s ease;
+        padding: 0 0;
+      }
+
+      .faq-item.active p {
+        max-height: 280px; /* enough for content */
+        padding: 10px 0 0;
+      }
+
+      .faq-item.active h5::after {
+        content: "−";
+      }
+
+      /* CTA Section */
+      .cta-section {
+        background: linear-gradient(135deg, #1a2332, #0f1621);
+        color: #fff;
+        padding: 80px 20px;
+      }
+
+      .cta-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+      }
+
+      .cta-content h3 {
+        font-size: 14px;
+        color: #ffc107;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-bottom: 15px;
+      }
+
+      .cta-content h2 {
+        font-size: 38px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 20px;
+      }
+
+      .cta-content > p {
+        font-size: 16px;
+        opacity: 0.8;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      .cta-list {
+        list-style: none;
+      }
+
+      .cta-list li {
+        font-size: 16px;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .cta-list li:before {
+        content: "✓";
+        color: #25d366;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .cta-form {
+        background: #fff;
+        padding: 35px;
+        border-radius: 15px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      }
+
+      .cta-form h3 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #1a2332;
+        margin-bottom: 25px;
+        text-transform: none;
+        letter-spacing: normal;
+      }
+
+      .form-group {
+        margin-bottom: 18px;
+      }
+
+      .form-group input,
+      .form-group select {
+        width: 100%;
+        padding: 14px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        transition: border-color 0.3s;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus {
+        outline: none;
+        border-color: #ffc107;
+      }
+
+      .recaptcha-box {
+        background: #f9fafb;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        margin-bottom: 18px;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 15px;
+        background: #ffc107;
+        color: #1a2332;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .submit-btn:hover {
+        background: #ffb300;
+        transform: translateY(-2px);
+      }
+
+      /* Services Explore Section */
+      .services-explore {
+        padding: 60px 20px;
+        background: #fff;
+      }
+
+      .services-explore h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        color: #1a2332;
+        margin-bottom: 40px;
+      }
+
+      .services-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .service-link {
+        background: #f9fafb;
+        padding: 18px 25px;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        color: #374151;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.3s;
+        border: 2px solid transparent;
+      }
+
+      .service-link:hover {
+        background: #fff4e0;
+        border-color: #ffc107;
+        color: #1a2332;
+        transform: translateY(-3px);
+      }
+
+      .service-link i {
+        margin-left: 5px;
+        font-size: 12px;
+      }
+
+      /* WhatsApp Float Button */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #25d366;
+        color: #fff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        cursor: pointer;
+        transition: all 0.3s;
+        z-index: 1000;
+      }
+
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+
+      /* Footer */
+      .footer {
+        background: #1a1a2e;
+        color: #fff;
+        padding: 60px 20px 30px;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h5 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        color: #fff;
+      }
+
+      .footer-col img {
+        max-width: 180px;
+        margin-bottom: 20px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 12px;
+      }
+
+      .footer-col ul li a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #f59e0b;
+      }
+
+      .footer-col ul li i {
+        margin-right: 10px;
+        color: #f59e0b;
+      }
+      .footer-col ul li:nth-child(3) i {
+        transform: rotate(90deg);
+      }
+
+      .footer-social {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      .footer-social a {
+        width: 40px;
+        height: 40px;
+        background: #2c2c44;
+        color: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s;
+      }
+
+      .footer-social a:hover {
+        background: #f59e0b;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #2c2c44;
+        color: #999;
+        font-size: 14px;
+      }
+
+      /* Responsive */
+      @media (max-width: 992px) {
+        .hero-section h1 {
+          font-size: 42px;
+        }
+
+        .cta-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .features-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .services-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        .footer-container {
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero-section {
+          padding: 70px 20px;
+        }
+
+        .hero-section h1 {
+          font-size: 36px;
+        }
+
+        .section-title {
+          font-size: 28px;
+        }
+
+        .cta-content h2 {
+          font-size: 28px;
+        }
+
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .services-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .footer-container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero-section h1 {
+          font-size: 28px;
+        }
+
+        .hero-buttons {
+          flex-direction: column;
+        }
+
+        .btn-primary,
+        .btn-whatsapp {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- main header -->
+    <header class="main-header header-style-three">
+      <!-- header-lower -->
+      <div class="header-lower">
+        <div class="outer-box">
+          <div class="logo-box">
+            <figure class="logo">
+              <a href="index.html" title="Tech Scholar"
+                ><img src="images/logo-1.png" alt="logo"
+              /></a>
+            </figure>
+          </div>
+          <div class="menu-area clearfix">
+            <!--Mobile Navigation Toggler-->
+            <div class="mobile-nav-toggler">
+              <i class="icon-bar"></i>
+              <i class="icon-bar"></i>
+              <i class="icon-bar"></i>
+            </div>
+            <nav class="main-menu navbar-expand-md navbar-light">
+              <div
+                class="collapse navbar-collapse show clearfix"
+                id="navbarSupportedContent"
+              >
+                <ul class="navigation clearfix">
+                  <li class="menu-item">
+                    <a
+                      title="Home"
+                      href="index.html"
+                      class="hvr-underline-from-left1"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      title="About Us"
+                      href="index.html#about-us"
+                      class="hvr-underline-from-left1"
+                      >About Us</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      title="Testimonials"
+                      href="index.html#testimonials"
+                      class="hvr-underline-from-left1"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="menu-item dropdown">
+                    <a
+                      title="Services"
+                      href="index.html#services"
+                      class="hvr-underline-from-left1"
+                      >Services</a
+                    >
+                    <ul
+                      role="menu"
+                      class="submenu"
+                      style="background-color: #32373c"
+                    >
+                      <li>
+                        <a href="thesis-dissertation-landing.html"
+                          >Thesis & Dissertation Writing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="plagiarism-removal.html"
+                          >Plagiarism Check & Removal</a
+                        >
+                      </li>
+                      <li>
+                        <a href="website devlopment.html
+"
+                          >Website Dev & Designing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="thesis-to-article.html"
+                          >Thesis-to-Article Conversion</a
+                        >
+                      </li>
+                      <li>
+                        <a href="research-paper-writing.html"
+                          >Research Paper Writing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="book-publication.html">Book Publication</a>
+                      </li>
+                      <li>
+                        <a href="citation-booster.html">Citation Booster</a>
+                      </li>
+                      <li>
+                        <a href="patent-filing.html">File Your Patent</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item current">
+                    <a
+                      title="Contact"
+                      href="contact-us.html"
+                      class="hvr-underline-from-left1"
+                      >Contact</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a
+                      title="Website Dev & Designing"
+                      href="website dev & designing.html"
+                      class="hvr-underline-from-left1"
+                      >Website Dev & Designing</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <ul class="nav-right">
+            <li class="search-box-outer search-toggler">
+              <i class="icon-6"></i>
+            </li>
+            <li class="phone">
+              <a href="tel:+91 85418-67300"><i class="icon-26"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--sticky Header-->
+      <div class="sticky-header">
+        <div class="outer-container">
+          <div class="outer-box">
+            <div class="logo-box">
+              <figure class="logo">
+                <a href="index.html" title="Tech Scholar"
+                  ><img src="images/logo-1.png" alt="logo" style="width: 150px"
+                /></a>
+              </figure>
+            </div>
+            <div class="menu-area clearfix">
+              <nav class="main-menu clearfix">
+                <!--Keep This Empty / Menu will come through Javascript-->
+              </nav>
+            </div>
+            <ul class="nav-right">
+              <li class="search-box-outer search-toggler">
+                <i class="icon-6"></i>
+              </li>
+              <li class="phone">
+                <a href="tel:+91 85418-67300"><i class="icon-26"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- main-header end -->
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="menu-backdrop"></div>
+      <div class="close-btn"><i class="fas fa-times"></i></div>
+
+      <nav class="menu-box">
+        <!-- <div class="nav-logo">
+          <a href="index.html" title="Tech Scholar"
+            ><img src="images/logo-1.png" alt="logo"
+          /></a>
+        </div> -->
+        <div class="menu-outer">
+          <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+        </div>
+        <div class="contact-info">
+          <h4>Our Address</h4>
+          <ul>
+            <li>SCO 267 First Floor, Sector 32D, Chandigarh</li>
+            <li><a href="tel:+91 85418-67300">+91 85418-67300</a></li>
+            <li>
+              <a href="mailto:Techscholar00@gmail.com"
+                >Techscholar00@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- End Mobile Menu -->
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <span class="hero-badge">🎓 Academic Excellence</span>
+        <h1>Thesis & Dissertation Writing</h1>
+        <p>
+          End-to-end support for Master's and Ph.D. thesis writing — from topic
+          selection to final submission. Our expert writers ensure your research
+          meets the highest academic standards.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn-primary" href="tel:+918541867300">Get Free Quote</a>
+          <a class="btn-whatsapp" href="https://wa.me/918541867300"
+            >WhatsApp Us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">WHAT'S INCLUDED</div>
+          <h2 class="section-title">Comprehensive Service Features</h2>
+          <p class="section-description">
+            Professional academic writing solutions backed by scholars
+            worldwide. From initial idea to final submission — we've got you
+            covered.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h4>Topic Selection & Refinement</h4>
+            <p>
+              Expert guidance in choosing a research topic that aligns with your
+              academic goals and interests with innovative approach.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h4>Comprehensive Literature Review</h4>
+            <p>
+              Thorough analysis of scholarly research to establish theoretical
+              framework and research gaps.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔬</div>
+            <h4>Research Methodology Design</h4>
+            <p>
+              Development of appropriate research frameworks tailored to your
+              research objectives.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h4>Data Analysis & Interpretation</h4>
+            <p>
+              Statistical analysis using SPSS and expert interpretation of
+              results.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✍️</div>
+            <h4>Chapter-by-Chapter Writing</h4>
+            <p>
+              Systematic development of each thesis chapter with proper academic
+              structure and citations.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✅</div>
+            <h4>Plagiarism-Free Guarantee</h4>
+            <p>
+              100% original content verified through Turnitin with detailed
+              similarity reports.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">OUR PROCESS</div>
+          <h2 class="section-title">How We Work</h2>
+        </div>
+        <ul class="process-list">
+          <li class="process-item">
+            <div class="process-number">1</div>
+            <span
+              >Initial consultation to understand your research goals,
+              timelines, and specific requirements</span
+            >
+          </li>
+          <li class="process-item">
+            <div class="process-number">2</div>
+            <span
+              >Topic finalization and refinement based on your interest and
+              academic objectives</span
+            >
+          </li>
+          <li class="process-item">
+            <div class="process-number">3</div>
+            <span
+              >Development of a detailed research proposal with problem
+              statement and objectives for approval</span
+            >
+          </li>
+          <li class="process-item">
+            <div class="process-number">4</div>
+            <span>Literature review and theoretical framework development</span>
+          </li>
+          <li class="process-item">
+            <div class="process-number">5</div>
+            <span
+              >Research methodology design and data collection strategy
+              planning</span
+            >
+          </li>
+          <li class="process-item">
+            <div class="process-number">6</div>
+            <span
+              >Data analysis and interpretation with expert statistical
+              support</span
+            >
+          </li>
+          <li class="process-item">
+            <div class="process-number">7</div>
+            <span
+              >Complete thesis writing with proper structuring and
+              citations</span
+            >
+          </li>
+          <li class="process-item">
+            <div class="process-number">8</div>
+            <span
+              >Final review, plagiarism check, and submission-ready formatting
+              and approval</span
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">FAQS</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <h5>How long does it usually take?</h5>
+            <p>
+              The timeline depends on your requirements and complexity.
+              Typically, a Master's thesis takes 2–4 months, while a PhD
+              dissertation requires 4–8 months. We work flexibly to meet your
+              deadlines.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h5>Do you provide support for specific disciplines?</h5>
+            <p>
+              Yes, we have expert writers across multiple disciplines including
+              Engineering, Management, Sciences, Humanities, and more. Our team
+              matches you with specialists in your field.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h5>Can I communicate directly with the writer?</h5>
+            <p>
+              Absolutely! We encourage direct communication with your assigned
+              writer throughout the process for updates, clarifications, and
+              feedback.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h5>What if my university rejects it?</h5>
+            <p>
+              We provide unlimited revisions until your university accepts the
+              work. Our commitment is to ensure your thesis meets all academic
+              standards and requirements.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h5>Is the work 100% original?</h5>
+            <p>
+              Yes, all content is 100% original and plagiarism-free. We provide
+              Turnitin reports with every delivery to ensure authenticity.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h5>Do you help with data collection/delivery and guidance?</h5>
+            <p>
+              Yes, we assist with questionnaire design, survey distribution, and
+              data collection methodology as per your research needs and guide
+              you through the entire process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="cta-grid">
+        <div class="cta-content">
+          <h3>GET STARTED</h3>
+          <h2>Ready to Begin Your Project?</h2>
+          <p>
+            Let us turn your academic goals into reality. With years of
+            experience in academic writing, our expert PhD writers are ready to
+            support your research journey from start to finish.
+          </p>
+          <ul class="cta-list">
+            <li>Free initial consultation</li>
+            <li>100% confidential service</li>
+            <li>Expert PhD-qualified writers</li>
+            <li>Unlimited revisions included</li>
+            <li>On-time delivery guaranteed</li>
+          </ul>
+        </div>
+        <div class="cta-form">
+          <h3>Request Your Free Consultation</h3>
+          <form id="ctaForm">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="Phone" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="department"
+                placeholder="Department Name"
+                required
+              />
+            </div>
+
+            <!-- <div class="form-group">
+              <select name="service" required>
+                <option value="">Select a service</option>
+                <option value="Thesis Writing">Thesis Writing</option>
+                <option value="Dissertation Writing">
+                  Dissertation Writing
+                </option>
+                <option value="Plagiarism Removal">Plagiarism Removal</option>
+                <option value="
+Website Devlopment">
+Website Devlopment</option>
+                <option value="Article Writing">Article Writing</option>
+                <option value="Book Publication">Book Publication</option>
+                <option value="Other">Other</option>
+              </select>
+            </div> -->
+
+            <div class="recaptcha-box">
+              <small style="color: #6b7280"
+                ><i class="fas fa-shield-alt"></i> reCAPTCHA verification</small
+              >
+            </div>
+            <button type="submit" class="submit-btn">
+              Send Request
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Other Services -->
+    <section class="services-explore">
+      <div class="container">
+        <h2>Explore Other Services</h2>
+        <div class="services-grid">
+          <a href="thesis-dissertation-landing.html" class="service-link">
+            Thesis Writing <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="plagiarism-removal.html" class="service-link">
+            Plagiarism Removal <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="website devlopment.html
+" class="service-link">
+            
+Website Devlopment <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="thesis-to-article.html" class="service-link">
+            Thesis to Article Conversion <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="research-paper-writing.html" class="service-link">
+            Research Paper Writing <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="book-publication.html" class="service-link">
+            Book Publication <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="citation-booster.html" class="service-link">
+            Citation Booster <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="patent-filing.html" class="service-link">
+            File Your Patent <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <img src="/images/logo-1.png" alt="Tech Scholar" />
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> SCO 267, First Floor, Sector
+              32D, Chandigarh
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:Techscholar00@gmail.com"
+                >Techscholar00@gmail.com</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+918541867300">+91 85418 67300</a>
+            </li>
+          </ul>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about-us">About Us</a></li>
+            <li><a href="index.html#services">Our Services</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h5>Our Services</h5>
+          <ul>
+            <li>
+              <a href="thesis-dissertation-landing.html">Thesis Writing</a>
+            </li>
+            <li><a href="plagiarism-removal.html">Plagiarism Removal</a></li>
+            <li><a href="website devlopment.html
+">
+Website Devlopment</a></li>
+            <li><a href="article-writing.html">Article Writing</a></li>
+            <li><a href="book-publication.html">Book Publication</a></li>
+            <li><a href="research-paper-writing.html">Research Writing</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="refund-policy.html">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2026 by Tech Scholar All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <!-- <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a> -->
+
+    <!-- WhatsApp Chat Widget -->
+    <!-- <div class="whatsapp-chat">
+        <a href="https://wa.me/918541867300" target="_blank" class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div> -->
+
+    <script>
+      document.querySelectorAll(".faq-item h5").forEach((question) => {
+        question.addEventListener("click", () => {
+          const currentItem = question.parentElement;
+
+          // Close all other items
+          document.querySelectorAll(".faq-item").forEach((item) => {
+            if (item !== currentItem) {
+              item.classList.remove("active");
+            }
+          });
+
+          // Toggle current
+          currentItem.classList.toggle("active");
+        });
+      });
+    </script>
+
+    <!-- Scripts -->
+    <script src="js/jquery-migrate.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/nav-tool.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+
+.clients-section{
+    padding: 55px 0px;
+}
+
+.clients-section .clients-logo{
+    position: relative;
+    display: block;
+}
+
+.clients-section .clients-logo img{
+    max-width: 100%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.6;
+    transition: all 500ms ease;
+}
+
+.clients-section .clients-logo img:hover{
+    opacity: 1;
+}

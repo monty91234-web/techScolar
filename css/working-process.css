@@ -1,0 +1,104 @@
+.working-section{
+    padding: 139px 0px 325px 0px;
+}
+
+.working-block-one .inner-box{
+    position: relative;
+    display: flex;
+    width: 290px;
+    height: 290px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.working-block-one .inner-box .count-text{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 23px;
+}
+
+.working-block-one .inner-box .count-text::before{
+    position: absolute;
+    content: '';
+    width: 120px;
+    height: 120px;
+    left: -15px;
+    top: -15px;
+    border-radius: 50%;
+}
+
+.working-block-one .inner-box .count-text span{
+    display: block;
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.working-block-one .inner-box h3{
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+.working-block-one .inner-box .arrow{
+    position: absolute;
+    width: 87px;
+    height: 32px;
+    top: 50%;
+    right: -145px;
+    background-repeat: no-repeat;
+}
+
+.working-section .inner-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.working-section .pattern-layer{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 491px;
+    background-repeat: repeat-x;
+    animation: slide 60s linear infinite;
+    -webkit-animation: slide 60s linear infinite;
+}
+
+/** working-light **/
+
+.working-section.light{
+    padding: 144px 0px 150px 0px;
+    background-color: #1D2133;
+}
+
+.working-section.light .working-block-one .inner-box{
+    background: #2F3343;
+}
+
+.working-section.light .working-block-one .inner-box h3,
+.working-section.light .working-block-one .inner-box p{
+    color: #fff;
+}
+
+.working-section.light .pattern-layer{
+    height: 361px;
+}

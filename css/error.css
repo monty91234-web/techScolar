@@ -1,0 +1,35 @@
+
+.error-section{
+	padding: 150px 0px;
+}
+
+.error-section .inner-box .error-image{
+	position: relative;
+	display: block;
+	margin-bottom: 45px;
+}
+
+.error-section .inner-box h2{
+	display: block;
+	font-size: 36px;
+	line-height: 46px;
+	font-weight: 700;
+	margin-bottom: 35px;
+}
+
+.error-section .inner-box .theme-btn-one{
+	box-shadow: none;
+	padding: 16px 35px 10px 33px;
+}
+
+.error-section .pattern-layer{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-animation: zoom-fade 8s infinite linear;
+    animation: zoom-fade 8s infinite linear;
+}

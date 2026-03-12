@@ -1,0 +1,169 @@
+.page-title .content-box .bread-crumb li .bread_year:after {
+    position: relative;
+    content: "\f105";
+    font-family: 'Font Awesome 5 Pro';
+    color: #000;
+    top: 1px;
+    right: -10px;
+}
+.bread_year{
+	margin-right:10px;
+}
+.bread_month{
+	padding-left: 5px;
+}
+
+.reply-btn a {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    padding: 3px 21px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background-color: #000;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.reply-btn a:hover {
+    background-color: #797979;
+    color: #fff;
+}
+
+.comments-area .outer-box .single-comment .single-comment-box {
+    display: flex;
+    margin-bottom: 40px;
+}
+.comments-area .outer-box .single-comment .img-holder {
+    /* width: 100px; */
+}
+.comments-area .outer-box .single-comment .img-holder img {
+    border-radius: 50%;
+    width: 80px;
+    margin-right: 15px;
+}
+.comments-area .outer-box .single-comment .text-holder {
+    position: relative;
+}
+.form-control:focus {
+    box-shadow: unset !important;
+}
+.comments-area .outer-box .single-comment .text-holder .top h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 10px;
+}
+.comments-area .outer-box .single-comment .text-holder .top span {
+    font-size: 14px;
+    color: #676767;
+}
+.comments-area .outer-box .single-comment .text-holder .text p {
+    margin: 0;
+    margin-top: 10px;
+    color: #6e6e6e;
+    font-weight: 400;
+}
+.comments-area .outer-box .single-comment .text-holder .text .reply {
+    background-image: none;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.comments-area .outer-box .single-comment .text-holder .text .reply a{
+    background-image: none;
+    background-color: #fff;
+    padding: 4px 28.5px;
+    box-shadow: 0px 10px 30px 0px rgb(51 57 178 / 15%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.comments-area .outer-box .single-comment .text-holder {
+    padding-left: 0px;
+}
+.comments-area .outer-box .single-comment .text-holder .text .reply a {
+    color: #222;
+}
+.comments-area .outer-box .single-comment .text-holder .text .reply:hover {
+    background: #EC4E4F;
+    transition: all 700ms ease;
+    cursor: pointer;
+}
+.comments-area .outer-box .single-comment .text-holder .text .reply:hover a {
+    color: #EC4E4F;
+}
+
+.wp_mr_post .sticky .inner-box,.wp_mr_post .tag-sticky-2  .inner-box{
+    border: 1px solid #b5b5b5;
+}
+.mrwidget .nice-select {
+    width: 100%;
+    line-height: 40px!important;
+}
+
+.comments-form-area{
+    /* background: #f2f2f2; */
+    /* padding: 25px; */
+    /* margin-bottom: 30px; */
+}
+.comments-area .outer-box .single-comment .text-holder {
+    width: calc(100% - 80px);
+}
+
+
+
+@media only screen and (min-width: 900px){
+.rashid-comment-item .depth-2 {
+   margin-left: 20px !important;
+}
+.rashid-comment-item .depth-3 {
+   margin-left: 40px !important;
+}
+.rashid-comment-item .depth-4 {
+    margin-left: 60px !important;
+}
+.rashid-comment-item .depth-5 {
+    margin-left: 80px !important;
+}
+	
+.rashid-comment-item .rashid-comment-item .comments-form-area{
+   margin-left: 20px !important;
+}
+.rashid-comment-item .rashid-comment-item .rashid-comment-item .comments-form-area{
+   margin-left: 40px !important;
+}	
+.rashid-comment-item .rashid-comment-item .rashid-comment-item .rashid-comment-item .comments-form-area{
+   margin-left: 60px !important;
+}	
+.rashid-comment-item .rashid-comment-item .rashid-comment-item .rashid-comment-item .rashid-comment-item .comments-form-area{
+   margin-left: 80px !important;
+}	
+}
+
+
+
+
+
+
+
+
+
+
+
+.comments-area .title h3 {
+    position: relative;
+    display: block;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}

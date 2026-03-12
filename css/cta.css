@@ -1,0 +1,227 @@
+.cta-section{
+  position: relative;
+  overflow: hidden;
+}
+
+.image_block_two .image-box{
+    position: relative;
+    display: block;
+    padding-left: 110px;
+    padding-right: 62px;
+    margin-top: 45px;
+}
+
+.image_block_two .image-box img{
+    width: 100%;
+}
+
+.image_block_two .image-box .image{
+    position: relative;
+}
+
+.image_block_two .image-shape .shape-1{
+    position: absolute;
+    left: 64px;
+    bottom: 55px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    -webkit-animation: zoom-fade 5s infinite linear;
+    animation: zoom-fade 5s infinite linear;
+}
+
+.image_block_two .image-shape .shape-2{
+    position: absolute;
+    right: 133px;
+    top: 111px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    -webkit-animation: zoom-fade 4s infinite linear;
+    animation: zoom-fade 4s infinite linear;
+}
+
+.image_block_two .image-shape .shape-3{
+    position: absolute;
+    right: 45px;
+    top: 175px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.content_block_three .content-box{
+    display: block;
+    padding: 140px 0px 140px 0px;
+}
+
+.content_block_three .content-box h2{
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.content_block_three .content-box h2 span{
+
+}
+
+.content_block_three .content-box p{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.content_block_three .content-box h4{
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.content_block_three .content-box h4 span{
+
+}
+
+.content_block_three .content-box .flag-list li{
+    position: relative;
+    display: inline-block;
+    float: left;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.content_block_three .content-box .flag-list li:last-child{
+    margin: 0px !important;
+}
+
+.content_block_three .content-box .flag-list li .flag{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    border-radius: 50%;
+}
+
+.content_block_three .content-box .flag-list li .flag img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.content_block_three .content-box .flag-list li h5{
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.cta-section .pattern-layer .pattern-1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 479px;
+    background-repeat: no-repeat;
+}
+
+.cta-section .pattern-layer .pattern-2{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 490px;
+    height: 272px;
+    background-repeat: no-repeat;
+}
+
+
+/** cta-style-two **/
+
+.cta-style-two{
+    position: relative;
+}
+
+.cta-style-two .bg-layer{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: calc(50% - 160px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content_block_seven .content-box{
+    position: relative;
+    display: block;
+}
+
+.content_block_seven .content-box h2{
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.content_block_seven .content-box h2 span{
+
+}
+
+.content_block_seven .content-box p{
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.content_block_seven .content-box .list-style-one li{
+    font-size: 20px;
+    color: #fff;
+}
+
+.content_block_seven .content-box .list-style-one{
+    margin-bottom: 25px;
+}
+
+.cta-style-two .pattern-layer .pattern-1{
+    position: absolute;
+    left: calc(50% - 160px);
+    top: 0px;
+    width: 148px;
+    height: 375px;
+    background-repeat: no-repeat;
+}
+
+.cta-style-two .pattern-layer .pattern-2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 356px;
+    height: 170px;
+    background-repeat: no-repeat;
+}
+
+.cta-style-two .pattern-layer .pattern-3{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 398px;
+    background-repeat: repeat-x;
+}
+
+.content_block_seven .content-box .theme-btn-one:hover{
+    color: #21263A !important;
+}
+
+.content_block_seven .content-box .theme-btn-one::before,
+.content_block_seven .content-box .theme-btn-one::after{
+    background-color: #fff;
+}

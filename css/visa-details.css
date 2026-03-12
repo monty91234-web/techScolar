@@ -1,0 +1,75 @@
+.visa-details{
+	padding: 150px 0px;
+}
+
+.visa-details-content{
+	position: relative;
+}
+
+.visa-details-content h2{
+	display: block;
+	font-size: 30px;
+	line-height: 38px;
+	font-weight: 700;
+	margin-bottom: 31px;
+}
+
+.visa-details-content p{
+	margin-bottom: 20px;
+}
+
+.visa-details-content p:last-child{
+	margin-bottom: 0px;
+}
+
+.visa-details-content .content-one .image-box{
+	position: relative;
+	display: block;
+	border-radius: 15px;
+	margin: 42px 0px;
+}
+
+.visa-details-content .content-one .image-box img{
+	width: 100%;
+	border-radius: 15px;
+}
+
+.visa-details-content h3{
+	display: block;
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.visa-details-content .content-two .image-box{
+	position: relative;
+	display: block;
+	border-radius: 15px;
+}
+
+.visa-details-content .content-two .image-box img{
+	width: 100%;
+	border-radius: 15px;
+}
+
+.visa-details-content .content-two .two-column{
+	margin: 42px 0px;
+}
+
+.visa-details-content .accordion-box .block{
+	box-shadow: none;
+	background: #F5F5F5;
+}
+
+.visa-details-content .accordion-box .block .acc-btn h5{
+	padding-left: 0px;
+}
+
+.visa-details-content .accordion-box .block .acc-content{
+	padding-left: 40px;
+}
+
+.visa-details-content .accordion-box .block .acc-btn .icon-outer{
+	color: #222;
+}

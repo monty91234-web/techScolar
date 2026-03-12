@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Dev & Designing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta name="robots" content="max-image-preview:large" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="images/WhatsApp-Image-2026-01-03-at-5.43.06-PM-e1767898651367.jpeg" />
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="images/WhatsApp-Image-2026-01-03-at-5.43.06-PM-e1767898651367.jpeg" />
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="images/WhatsApp-Image-2026-01-03-at-5.43.06-PM-e1767898651367.jpeg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/font-awesome-all.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style_1.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/frontend.min.css" />
+  <link rel="stylesheet" href="css/post-10108.css" />
+  <link rel="stylesheet" href="css/widget-divider.min.css" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f6f7fb;
+      color: #1f2937
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px
+    }
+
+    /* HERO SECTION - UNCHANGED */
+    .hero-section {
+      background: linear-gradient(135deg, #1a2332, #0f1621);
+      color: #fff;
+      padding: 100px 20px;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      background: rgba(255, 193, 7, 0.1);
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-size: 13px;
+      color: #ffc107;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .hero-section h1 {
+      font-size: 56px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.2;
+      color: #ffc107;
+    }
+
+    .hero-section p {
+      font-size: 18px;
+      max-width: 650px;
+      opacity: 0.9;
+      line-height: 1.6;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: #ffc107;
+      color: #1a2332;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-primary:hover {
+      background: #ffb300;
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: #fff;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-whatsapp:hover {
+      background: #20ba5a;
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER - UNCHANGED */
+    .footer {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 60px 20px 30px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h5 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #fff;
+    }
+
+    .footer-col img {
+      max-width: 180px;
+      margin-bottom: 20px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      margin-bottom: 12px;
+    }
+
+    .footer-col ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .footer-col ul li a:hover {
+      color: #f59e0b;
+    }
+
+    .footer-col ul li i {
+      margin-right: 10px;
+      color: #f59e0b;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      background: #2c2c44;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s;
+    }
+
+    .footer-social a:hover {
+      background: #f59e0b;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #2c2c44;
+      color: #999;
+      font-size: 14px;
+    }
+
+    /* RESPONSIVE - UNCHANGED */
+    @media(max-width:900px) {
+      .hero h1 {
+        font-size: 32px
+      }
+    }
+
+    @media (max-width: 992px) {
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+
+      .hero-section h1 {
+        font-size: 42px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-section {
+        padding: 70px 20px;
+      }
+
+      .hero-section h1 {
+        font-size: 36px;
+      }
+    }
+
+    /* ==================== NEW PREMIUM 3-COLUMN CARDS (REPLACES OLD CARDS) ==================== */
+    .services-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 42px;
+      font-weight: 700;
+      color: #1a2332;
+      margin-bottom: 60px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .service-card {
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s ease;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 25px 60px rgba(37, 99, 235, 0.18);
+    }
+
+    .card-header {
+      background: linear-gradient(135deg, #1e40af, #3b82f6);
+      color: #fff;
+      padding: 28px 20px 18px;
+      text-align: center;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.3;
+      min-height: 118px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-logo {
+      position: absolute;
+      top: 14px;
+      left: 18px;
+      background: #fff;
+      padding: 5px 8px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      z-index: 2;
+    }
+
+    .card-logo img {
+      height: 26px;   /* Small logo as requested */
+    }
+
+    .card-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .badges {
+      padding: 18px 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      background: #eff6ff;
+      color: #1e40af;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 30px;
+      border: 1px solid #bfdbfe;
+    }
+
+    .features {
+      padding: 22px 22px 18px;
+      font-size: 14.5px;
+      color: #374151;
+      line-height: 1.75;
+      min-height: 148px;
+    }
+
+    .features ul {
+      list-style: none;
+    }
+
+    .features li {
+      padding: 7px 0 7px 30px;
+      position: relative;
+    }
+
+    .features li:before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #22c55e;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .card-footer {
+      background: #1e3a8a;
+      color: #fff;
+      padding: 16px 20px;
+      font-size: 13.5px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .card-footer a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-footer a:hover {
+      color: #60a5fa;
+    }
+
+    .enquire-btn {
+      display: block;
+      width: 100%;
+      background: #25d366;
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      font-size: 16px;
+      font-weight: 700;
+      border: none;
+      border-radius: 0 0 16px 16px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+
+    .enquire-btn:hover {
+      background: #20ba5a;
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 992px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .section-title {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- main header - UNCHANGED -->
+  <header class="main-header header-style-three">
+    <div class="header-lower">
+      <div class="outer-box">
+        <div class="logo-box">
+          <figure class="logo">
+            <a href="index.html" title="Tech Scholar"><img src="images/logo-1.png" alt="logo" /></a>
+          </figure>
+        </div>
+        <div class="menu-area clearfix">
+          <div class="mobile-nav-toggler">
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+            <i class="icon-bar"></i>
+          </div>
+          <nav class="main-menu navbar-expand-md navbar-light">
+            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+              <ul class="navigation clearfix">
+                <li class="menu-item">
+                  <a title="Home" href="index.html" class="hvr-underline-from-left1">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a title="About Us" href="index.html#about-us" class="hvr-underline-from-left1">About Us</a>
+                </li>
+                <li class="menu-item">
+                  <a title="Testimonials" href="index.html#testimonials" class="hvr-underline-from-left1">Testimonials</a>
+                </li>
+                <li class="menu-item dropdown">
+                  <a title="Services" href="index.html#services" class="hvr-underline-from-left1">Services</a>
+                  <ul role="menu" class="submenu" style="background-color: #32373c">
+                    <li><a href="thesis-dissertation-landing.html">Thesis & Dissertation Writing</a></li>
+                    <li><a href="plagiarism-removal.html">Plagiarism Check & Removal</a></li>
+                    <li><a href="website devlopment.html">Website Dev & Designing</a></li>
+                    <li><a href="thesis-to-article.html">Thesis-to-Article Conversion</a></li>
+                    <li><a href="research-paper-writing.html">Research Paper Writing</a></li>
+                    <li><a href="book-publication.html">Book Publication</a></li>
+                    <li><a href="citation-booster.html">Citation Booster</a></li>
+                    <li><a href="patent-filing.html">File Your Patent</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item current">
+                  <a title="Contact" href="contact-us.html" class="hvr-underline-from-left1">Contact</a>
+                </li>
+                <li class="menu-item">
+                  <a title="Website Dev & Designing" href="website dev & designing.html" class="hvr-underline-from-left1">Website Dev & Designing</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <ul class="nav-right">
+          <li class="search-box-outer search-toggler"><i class="icon-6"></i></li>
+          <li class="phone"><a href="tel:+91 85418-67300"><i class="icon-26"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--sticky Header-->
+    <div class="sticky-header">
+      <div class="outer-container">
+        <div class="outer-box">
+          <div class="logo-box">
+            <figure class="logo">
+              <a href="index.html" title="Tech Scholar"><img src="images/logo-1.png" alt="logo" style="width: 150px" /></a>
+            </figure>
+          </div>
+          <div class="menu-area clearfix">
+            <nav class="main-menu clearfix"></nav>
+          </div>
+          <ul class="nav-right">
+            <li class="search-box-outer search-toggler"><i class="icon-6"></i></li>
+            <li class="phone"><a href="tel:+91 85418-67300"><i class="icon-26"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu - UNCHANGED -->
+  <div class="mobile-menu">
+    <div class="menu-backdrop"></div>
+    <div class="close-btn"><i class="fas fa-times"></i></div>
+    <nav class="menu-box">
+      <div class="nav-logo">
+        <a href="index.html" title="Tech Scholar"><img src="images/logo.png" alt="logo" /></a>
+      </div>
+      <div class="menu-outer"></div>
+      <div class="contact-info">
+        <h4>Our Address</h4>
+        <ul>
+          <li>SCO 267 First Floor, Sector 32D, Chandigarh</li>
+          <li><a href="tel:+91 85418-67300">+91 85418-67300</a></li>
+          <li><a href="mailto:Techscholar00@gmail.com">Techscholar00@gmail.com</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section - UNCHANGED -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <span class="hero-badge">Website Development & Designing</span>
+      <h1>Website Development & Designing</h1>
+      <p style="text-align: justify;">
+        We provide end-to-end website development and designing services, including custom web design, responsive
+        development, UI/UX optimization, e-commerce solutions, content management systems, and advanced SEO strategies,
+        to help businesses build a powerful online presence, rank higher on Google, and achieve sustainable growth in
+        the digital world.
+      </p>
+      <div class="hero-buttons">
+        <a class="btn-primary" href="tel:+918541867300">Get Free Quote</a>
+        <a class="btn-whatsapp" href="https://wa.me/918541867300">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEW PREMIUM CARDS SECTION (3 in one row) ==================== -->
+  <section class="services-section">
+    <div class="container">
+      <h2 class="section-title">Our Website Development & Designing Services</h2>
+
+      <div class="services-grid">
+
+        <!-- Card 1 -->
+        <div class="service-card">
+          <div class="card-header">Web Development &<br>Digital Solutions</div>
+          <div class="card-logo"><img src="images/logo-1.png" alt="TechScholar"></div>
+          <img src="images/image1.jpeg" class="card-image" alt="Web Development">
+          <div class="badges">
+            <span class="badge">Responsive Design</span>
+            <span class="badge">Custom UI/UX</span>
+            <span class="badge">Fast Loading</span>
+          </div>
+          <div class="features">
+            <ul>
+              <li>Modern & Professional Websites</li>
+              <li>Mobile-First Responsive Layout</li>
+              <li>SEO Friendly Structure</li>
+              <li>CMS Integration (WordPress, Custom)</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <a href="tel:+918541867300"><strong>📞 +91 85418 67300</strong></a>
+            <a href="mailto:Techscholar00@gmail.com"><strong>✉ Techscholar00@gmail.com</strong></a>
+          </div>
+          <a href="https://wa.me/918541867300" target="_blank" class="enquire-btn">Enquire Now</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+          <div class="card-header">Domain & Hosting<br>Services</div>
+          <div class="card-logo"><img src="images/logo-1.png" alt="TechScholar"></div>
+          <img src="images/image2.jpeg" class="card-image" alt="Domain Hosting">
+          <div class="badges">
+            <span class="badge">Free SSL</span>
+            <span class="badge">99.9% Uptime</span>
+            <span class="badge">24/7 Support</span>
+          </div>
+          <div class="features">
+            <ul>
+              <li>Premium Domain Registration</li>
+              <li>Fast & Secure Web Hosting</li>
+              <li>Daily Backup & Security</li>
+              <li>One-Click WordPress Install</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <a href="tel:+918541867300"><strong>📞 +91 85418 67300</strong></a>
+            <a href="mailto:Techscholar00@gmail.com"><strong>✉ Techscholar00@gmail.com</strong></a>
+          </div>
+          <a href="https://wa.me/918541867300" target="_blank" class="enquire-btn">Enquire Now</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card">
+          <div class="card-header">E-Commerce<br>Development</div>
+          <div class="card-logo"><img src="images/logo-1.png" alt="TechScholar"></div>
+          <img src="images/image3.jpeg" class="card-image" alt="Ecommerce">
+          <div class="badges">
+            <span class="badge">Payment Gateway</span>
+            <span class="badge">Multi-Vendor Ready</span>
+            <span class="badge">Mobile App Ready</span>
+          </div>
+          <div class="features">
+            <ul>
+              <li>Shopify / WooCommerce / Custom</li>
+              <li>Secure Checkout & Cart</li>
+              <li>Product Management Dashboard</li>
+              <li>Order Tracking System</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <a href="tel:+918541867300"><strong>📞 +91 85418 67300</strong></a>
+            <a href="mailto:Techscholar00@gmail.com"><strong>✉ Techscholar00@gmail.com</strong></a>
+          </div>
+          <a href="https://wa.me/918541867300" target="_blank" class="enquire-btn">Enquire Now</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card">
+          <div class="card-header">SEO & Digital<br>Marketing</div>
+          <div class="card-logo"><img src="images/logo-1.png" alt="TechScholar"></div>
+          <img src="images/image4.jpeg" class="card-image" alt="SEO">
+          <div class="badges">
+            <span class="badge">Google Ranking</span>
+            <span class="badge">Local SEO</span>
+            <span class="badge">Social Media</span>
+          </div>
+          <div class="features">
+            <ul>
+              <li>On-Page & Off-Page SEO</li>
+              <li>Google Ads & Facebook Ads</li>
+              <li>Content Marketing</li>
+              <li>Monthly Performance Reports</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <a href="tel:+918541867300"><strong>📞 +91 85418 67300</strong></a>
+            <a href="mailto:Techscholar00@gmail.com"><strong>✉ Techscholar00@gmail.com</strong></a>
+          </div>
+          <a href="https://wa.me/918541867300" target="_blank" class="enquire-btn">Enquire Now</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card">
+          <div class="card-header">Software & Custom<br>Solutions</div>
+          <div class="card-logo"><img src="images/logo-1.png" alt="TechScholar"></div>
+          <img src="images/image5.jpeg" class="card-image" alt="Software">
+          <div class="badges">
+            <span class="badge">ERP / CRM</span>
+            <span class="badge">API Integration</span>
+            <span class="badge">Custom Software</span>
+          </div>
+          <div class="features">
+            <ul>
+              <li>Business Automation Tools</li>
+              <li>Inventory & Billing System</li>
+              <li>School / Hospital Management</li>
+              <li>Any Custom Requirement</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <a href="tel:+918541867300"><strong>📞 +91 85418 67300</strong></a>
+            <a href="mailto:Techscholar00@gmail.com"><strong>✉ Techscholar00@gmail.com</strong></a>
+          </div>
+          <a href="https://wa.me/918541867300" target="_blank" class="enquire-btn">Enquire Now</a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card">
+          <div class="card-header">Additional IT<br>Services</div>
+          <div class="card-logo"><img src="images/logo-1.png" alt="TechScholar"></div>
+          <img src="images/image6.jpeg" class="card-image" alt="Additional IT">
+          <div class="badges">
+            <span class="badge">Mobile App Dev</span>
+            <span class="badge">Graphic Design</span>
+            <span class="badge">Bulk SMS / Email</span>
+          </div>
+          <div class="features">
+            <ul>
+              <li>Android & iOS App Development</li>
+              <li>Branding & Logo Design</li>
+              <li>WhatsApp Business API</li>
+              <li>Digital Visiting Cards</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <a href="tel:+918541867300"><strong>📞 +91 85418 67300</strong></a>
+            <a href="mailto:Techscholar00@gmail.com"><strong>✉ Techscholar00@gmail.com</strong></a>
+          </div>
+          <a href="https://wa.me/918541867300" target="_blank" class="enquire-btn">Enquire Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer - UNCHANGED -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <img src="/images/logo-1.png" alt="Tech Scholar" />
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> SCO 267, First Floor, Sector 32D, Chandigarh</li>
+          <li><i class="fas fa-envelope"></i><a href="mailto:Techscholar00@gmail.com">Techscholar00@gmail.com</a></li>
+          <li><i class="fas fa-phone"></i><a href="tel:+918541867300">+91 85418 67300</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about-us">About Us</a></li>
+          <li><a href="index.html#services">Our Services</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="thesis-dissertation-landing.html">Thesis Writing</a></li>
+          <li><a href="plagiarism-removal.html">Plagiarism Removal</a></li>
+          <li><a href="website devlopment.html">Website Devlopment</a></li>
+          <li><a href="article-writing.html">Article Writing</a></li>
+          <li><a href="book-publication.html">Book Publication</a></li>
+          <li><a href="research-paper-writing.html">Research Writing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="refund-policy.html">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2026 by Tech Scholar All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts - UNCHANGED -->
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/owl.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/appear.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/scrollbar.js"></script>
+  <script src="js/nav-tool.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+
+</html>

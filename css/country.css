@@ -1,0 +1,285 @@
+.country-section{
+    position: relative;
+}
+
+.content_block_two .content-box{
+    position: relative;
+    display: block;
+}
+
+.content_block_two .content-box .country-list h3{
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.content_block_two .content-box .list-style-two li{
+    float: left;
+    width: 33.333%;
+}
+
+.country-section .image-layer{
+    position: absolute;
+    right: 120px;
+    bottom: 0px;
+}
+
+.country-section .pattern-layer .pattern-1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 781px;
+    height: 845px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.country-section .pattern-layer .pattern-2{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 920px;
+    height: 845px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.country-section .pattern-layer .pattern-3 {
+    position: absolute;
+    right: 700px;
+    bottom: 200px;
+    width: 205px;
+    height: 205px;
+    background-repeat: no-repeat;
+}
+
+.country-section .pattern-layer .pattern-4{
+    position: absolute;
+    right: 655px;
+    bottom: 118px;
+    width: 200px;
+    height: 200px;
+    border: 20px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0px 20px 60px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/** country-style-two **/
+
+.country-style-two{
+    position: relative;
+}
+
+.image_block_four .image-box{
+    position: relative;
+    margin: 0px 2.5px;
+}
+
+.image_block_four .image-box .image{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image_block_four .image-box .image img{
+    width: 100%;
+    border-radius: 15px;
+    transition: all 500ms ease;
+}
+
+.image_block_four .image-box .image:hover img{
+    transform: scale(1.05);
+}
+
+.image_block_four .image-box .image-column{
+    padding: 0px 10px;
+}
+
+.image_block_four .image-box .image-shape{
+    position: absolute;
+    right: -43px;
+    bottom: -75px;
+    width: 205px;
+    height: 205px;
+    background-repeat: no-repeat;
+}
+
+.content_block_five .content-box .country-inner h3{
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.content_block_five .content-box .country-inner{
+    max-width: 500px;
+}
+
+.content_block_five .content-box .country-list::before{
+    position: absolute;
+    content: '';
+    background-color: #e5e5e5;
+    width: calc(100% - 25px);
+    height: 1px;
+    right: 0px;
+    top: 50%;
+}
+
+.content_block_five .content-box .country-list li{
+    position: relative;
+    display: block;
+    float: left;
+    width: 25%;
+    border-right: 1px solid #E5E5E5;
+}
+
+.content_block_five .content-box .country-list li:nth-child(4),
+.content_block_five .content-box .country-list li:last-child{
+    border: none;
+}
+
+.content_block_five .content-box .country-list li:first-child,
+.content_block_five .content-box .country-list li:nth-child(2),
+.content_block_five .content-box .country-list li:nth-child(3),
+.content_block_five .content-box .country-list li:nth-child(4){
+    padding-bottom: 50px;
+}
+
+.content_block_five .content-box .country-list{
+    margin-left: -25px;
+}
+
+.content_block_five .content-box .country-list li .flag{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 13px;
+}
+
+.content_block_five .content-box .country-list li .flag img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.content_block_five .content-box .country-list li h6{
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+}
+
+.country-style-two .pattern-layer .pattern-1{
+    position: absolute;
+    top: 124px;
+    right: 0px;
+    width: 465px;
+    height: 790px;
+    background-repeat: no-repeat;
+}
+
+.country-style-two .pattern-layer .pattern-2{
+    position: absolute;
+    right: 150px;
+    bottom: 250px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    -webkit-animation: zoom-fade 5s infinite linear;
+    animation: zoom-fade 5s infinite linear
+}
+
+
+/** country-style-three **/
+
+.country-style-three{
+    padding: 142px 0px 120px 0px;
+    overflow: hidden;
+}
+
+.country-block-one .inner-box{
+    position: relative;
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 35px 35px 36px 130px;
+    margin-bottom: 30px;
+    transition: all 500ms ease;
+}
+
+.country-block-one .inner-box:hover{
+    transform: translateY(-10px);
+}
+
+.country-block-one .inner-box .flag{
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    left: 30px;
+    top: 40px;
+}
+
+.country-block-one .inner-box .flag img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.country-block-one .inner-box h4{
+    display: block;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.country-style-three .tab-btns li{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'League Spartan', sans-serif;
+    color: #222;
+    background: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 13px 50px 11px 50px;
+    margin: 0px 6px;
+    transition: all 500ms ease;
+}
+
+.country-style-three .tab-btns li.active-btn,
+.country-style-three .tab-btns li:hover{
+    color: #fff;
+}
+
+.country-style-three .pattern-layer .pattern-1{
+    position: absolute;
+    top: -35px;
+    right: 0px;
+    width: 385px;
+    height: 473px;
+    background-repeat: no-repeat;
+    -webkit-animation: zoom-fade 5s infinite linear;
+    animation: zoom-fade 5s infinite linear;
+}
+
+.country-style-three .pattern-layer .pattern-2{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    width: 470px;
+    height: 477px;
+    background-repeat: no-repeat;
+}

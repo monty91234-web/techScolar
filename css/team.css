@@ -1,0 +1,275 @@
+.team-section{
+    position: relative;
+}
+
+.team-block-one .inner-box{
+    position: relative;
+    display: block;
+}
+
+.team-block-one .inner-box .image-box{
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.team-block-one .inner-box .image-box img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-block-one .inner-box .content-box{
+    position: relative;
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.1);
+    border-radius: 220px;
+    padding: 110px 30px 87px 30px;
+    margin-top: -75px;
+    transition: all 500ms ease;
+}
+
+.team-block-one .inner-box:hover .content-box{
+
+}
+
+.team-block-one .inner-box h3{
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.team-block-one .inner-box h3 a{
+    display: inline-block;
+    color: #222;
+}
+
+.team-block-one .inner-box:hover h3 a{
+    color: #fff;
+}
+
+.team-block-one .inner-box h3 a:hover{
+    text-decoration: underline;
+}
+
+.team-block-one .inner-box .designation{
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: all 500ms ease;
+}
+
+.team-block-one .inner-box:hover .designation{
+    color: #fff;
+}
+
+.team-block-one .inner-box p{
+    margin-bottom: 34px;
+    transition: all 500ms ease;
+}
+
+.team-block-one .inner-box:hover p{
+    color: #fff;
+}
+
+.team-block-one .inner-box .social-links li{
+    position: relative;
+    display: inline-block;
+    margin: 0px 3.5px;
+}
+
+.team-block-one .inner-box .social-links li a{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    color: #676767;
+    box-shadow: 0px 10px 50px rgba(34, 34, 34, 0.2);
+    border-radius: 50%;
+}
+
+.team-block-one .inner-box:hover .social-links li a{
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.team-block-one .inner-box .social-links li a:hover{
+    background-color: #fff;
+}
+
+.team-section .shape{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: -110px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/** team-style-two **/
+
+.team-style-two{
+    position: relative;
+}
+
+.team-block-two .inner-box{
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.team-block-two .inner-box .image-box{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: #000;
+}
+
+.team-block-two .inner-box .image-box img{
+    width: 100%;
+    transition: all 500ms ease;
+}
+
+.team-block-two .inner-box:hover .image-box img{
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.team-block-two .inner-box .lower-content{
+    position: relative;
+    display: block;
+    padding: 30px;
+}
+
+.team-block-two .inner-box .lower-content h3{
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.team-block-two .inner-box .lower-content h3 a{
+    display: inline-block;
+    color: #222;
+}
+
+.team-block-two .inner-box .lower-content h3 a:hover{
+
+}
+
+.team-block-two .inner-box .lower-content .designation{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.team-block-two .inner-box .share-box{
+  top: -23px;
+  right: 30px;
+  z-index: 1;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+.team-block-two .inner-box:hover .share-box{
+    opacity: 1;
+}
+
+.team-block-two .inner-box .share-box:before{
+  position: absolute;
+  content: '';
+  background: transparent;
+  width: 100%;
+  height: 15px;
+  left: 0px;
+  top: -15px;
+}
+
+.team-block-two .inner-box .share-box .share-icon{
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.team-block-two .inner-box .share-box .share-links{
+  right: 0px;
+  bottom: 45px;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+.team-block-two .inner-box .share-box:hover .share-links{
+  bottom: 60px;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.team-block-two .inner-box .share-box .share-links li a{
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  color: #676767;
+  background: #fff;
+}
+
+.team-block-two .inner-box .share-box .share-links li a:hover{
+  color: #fff;
+}
+
+.team-style-two.team-page .team-block-two .inner-box{
+    margin-bottom: 30px;
+}
+
+.team-style-two.team-page{
+    padding-bottom: 120px;
+}
+
+.team-section.team-page .team-block-one .inner-box{
+    margin-bottom: 30px;
+}
+
+.team-section.team-page{
+    padding-bottom: 120px;
+    overflow: hidden;
+}
+
+.team-section .pattern-layer .pattern-1{
+    position: absolute;
+    left: 0px;
+    top: -35px;
+    width: 345px;
+    height: 473px;
+    background-repeat: no-repeat;
+}
+
+.team-section .pattern-layer .pattern-2{
+    position: absolute;
+    right: 126px;
+    bottom: -120px;
+    width: 466px;
+    height: 473px;
+    background-repeat: no-repeat;
+}
