@@ -274,6 +274,8 @@ RULES:
 
     try{
       // ↓ calls your /api/chat route — API key stays safe on server
+	  console.log("testingggg");
+	  
       const res = await fetch('/api/chat', {
         method  : 'POST',
         headers : { 'Content-Type': 'application/json' },
@@ -288,6 +290,8 @@ RULES:
       }
 
       const data  = await res.json();
+	  console.log("data",data);
+	  
       const reply = data.choices?.[0]?.message?.content
                     || 'Sorry, could not get a response. Please contact us directly.';
 
