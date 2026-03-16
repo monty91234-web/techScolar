@@ -13,6 +13,347 @@
 
 		gtag('config', 'G-K8J9EEWW6Z');
 	</script>
+	
+
+
+
+
+
+
+
+<style>
+#ts-cw *{box-sizing:border-box;margin:0;padding:0}
+.ts-bbl{
+	padding: 6px 14px !important;
+}
+.ts-msgs{
+	padding: 6px 14px !important;
+}
+.ts-qrs{
+	padding: 14px !important;
+}
+.ts-hdr{
+	padding: 14px !important;
+}
+.ts-qr{
+	padding: 2px 8px !important;
+}
+#ts-cw{position:fixed;bottom:20px;right:20px;z-index:999999;display:flex;flex-direction:column;align-items:flex-end;gap:10px;font-family:'Segoe UI',system-ui,-apple-system,sans-serif}
+
+#ts-toggle{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#f59e0b 0%,#d97706 100%);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(245,158,11,.5),0 2px 6px rgba(0,0,0,.2);transition:transform .25s ease,box-shadow .25s ease;position:relative;flex-shrink:0}
+#ts-toggle:hover{transform:scale(1.07);box-shadow:0 6px 24px rgba(245,158,11,.6)}
+#ts-toggle:active{transform:scale(.97)}
+.t-ico{display:flex;align-items:center;justify-content:center;transition:transform .3s ease}
+.t-badge{position:absolute;top:-2px;right:-2px;width:17px;height:17px;background:#ef4444;border-radius:50%;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#fff;font-family:inherit}
+
+#ts-win{width:320px;height:440px;background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.14),0 2px 10px rgba(0,0,0,.07);display:flex;flex-direction:column;overflow:hidden;transform-origin:bottom right;transition:transform .3s cubic-bezier(.34,1.4,.64,1),opacity .3s ease;border:1px solid rgba(0,0,0,.07)}
+#ts-win.ts-hide{transform:scale(.88) translateY(16px);opacity:0;pointer-events:none}
+
+.ts-hdr{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);padding:11px 14px;display:flex;align-items:center;gap:10px;flex-shrink:0;position:relative}
+.ts-hdr::after{content:'';position:absolute;bottom:0;left:14px;right:14px;height:1px;background:linear-gradient(90deg,transparent,rgba(245,158,11,.4),transparent)}
+.ts-av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;box-shadow:0 2px 8px rgba(245,158,11,.4);border:2px solid rgba(255,255,255,.15)}
+.ts-hdr-info{flex:1;min-width:0}
+.ts-hn{font-size:13.5px;font-weight:700;color:#fff;letter-spacing:.01em;line-height:1.2}
+.ts-hs{font-size:10.5px;color:rgba(255,255,255,.55);display:flex;align-items:center;gap:4px;margin-top:2px}
+.ts-hs::before{content:'';width:6px;height:6px;background:#4ade80;border-radius:50%;flex-shrink:0;box-shadow:0 0 6px rgba(74,222,128,.6)}
+.ts-xbtn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);width:26px;height:26px;border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);transition:all .2s;flex-shrink:0}
+.ts-xbtn:hover{background:rgba(255,255,255,.2);color:#fff;border-color:rgba(255,255,255,.2)}
+
+.ts-msgs{flex:1;overflow-y:auto;padding:11px;display:flex;flex-direction:column;gap:8px;background:#f9fafb;scroll-behavior:smooth}
+.ts-msgs::-webkit-scrollbar{width:3px}
+.ts-msgs::-webkit-scrollbar-track{background:transparent}
+.ts-msgs::-webkit-scrollbar-thumb{background:#e5e7eb;border-radius:2px}
+
+.ts-msg{display:flex;flex-direction:column;gap:3px;animation:ts-in .28s ease forwards}
+@keyframes ts-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.ts-msg.ts-u{align-items:flex-end}
+.ts-msg.ts-b{align-items:flex-start}
+.ts-bbl{max-width:82%;padding:8px 11px;border-radius:12px;font-size:12.5px;line-height:1.5;word-break:break-word;font-family:inherit}
+.ts-msg.ts-u .ts-bbl{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;border-bottom-right-radius:3px;box-shadow:0 2px 8px rgba(217,119,6,.25)}
+.ts-msg.ts-b .ts-bbl{background:#fff;color:#1f2937;border-bottom-left-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,.08);border:1px solid #f0f0f0}
+.ts-msg.ts-b .ts-bbl strong{color:#92400e}
+.ts-msg.ts-b .ts-bbl ul{padding-left:15px;margin:4px 0}
+.ts-msg.ts-b .ts-bbl li{margin-bottom:2px}
+.ts-time{font-size:9.5px;color:#c4c4c4;padding:0 2px}
+
+.ts-typ-wrap{display:flex;align-items:center;gap:4px;padding:7px 11px;background:#fff;border-radius:12px;border-bottom-left-radius:3px;width:fit-content;box-shadow:0 1px 4px rgba(0,0,0,.08);border:1px solid #f0f0f0}
+.ts-typ-wrap span{width:5px;height:5px;background:#d97706;border-radius:50%;display:inline-block;animation:ts-dot 1.3s infinite}
+.ts-typ-wrap span:nth-child(2){animation-delay:.2s}
+.ts-typ-wrap span:nth-child(3){animation-delay:.4s}
+@keyframes ts-dot{0%,60%,100%{transform:translateY(0);opacity:.35}30%{transform:translateY(-5px);opacity:1}}
+
+.ts-qrs{display:flex;flex-wrap:wrap;gap:5px;padding:7px 11px;background:#f9fafb;border-top:1px solid #f0f0f0}
+.ts-qr{background:#fff;border:1.5px solid #f59e0b;color:#92400e;font-size:11px;font-weight:600;padding:4px 10px;border-radius:18px;cursor:pointer;transition:all .18s;white-space:nowrap;font-family:inherit}
+.ts-qr:hover{background:#f59e0b;color:#fff;transform:translateY(-1px);box-shadow:0 3px 10px rgba(245,158,11,.3)}
+
+.ts-inp-wrap{padding:8px 10px;background:#fff;border-top:1px solid #f0f0f0;display:flex;gap:7px;align-items:flex-end;flex-shrink:0}
+#ts-inp{flex:1;border:1.5px solid #e9ecef;border-radius:9px;padding:7px 11px;font-size:12.5px;color:#1f2937;resize:none;outline:none;transition:border-color .2s,background .2s;max-height:70px;line-height:1.4;background:#f9fafb;font-family:inherit}
+#ts-inp:focus{border-color:#f59e0b;background:#fff;box-shadow:0 0 0 3px rgba(245,158,11,.1)}
+#ts-inp::placeholder{color:#c4c4c4}
+#ts-snd{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#f59e0b,#d97706);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;box-shadow:0 2px 6px rgba(245,158,11,.3)}
+#ts-snd:hover:not(:disabled){transform:scale(1.07);box-shadow:0 4px 12px rgba(245,158,11,.45)}
+#ts-snd:disabled{opacity:.45;cursor:not-allowed}
+
+.ts-foot{text-align:center;font-size:10px;color:#c4c4c4;padding:4px 11px 8px;background:#fff;flex-shrink:0;font-family:inherit}
+.ts-foot a{color:#f59e0b;text-decoration:none;font-weight:500}
+.ts-foot a:hover{text-decoration:underline}
+
+@media(max-width:480px){
+  #ts-cw{bottom:14px;right:12px}
+  #ts-win{width:calc(100vw - 24px);height:400px}
+}
+</style>
+
+<div id="ts-cw">
+  <div id="ts-win" class="ts-hide">
+
+    <div class="ts-hdr">
+      <div class="ts-av">🎓</div>
+      <div class="ts-hdr-info">
+        <div class="ts-hn">TechScholar Assistant</div>
+        <div class="ts-hs">Online · Replies instantly</div>
+      </div>
+      <button class="ts-xbtn" id="ts-xbtn" aria-label="Close">
+        <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="ts-msgs" id="ts-msgs"></div>
+
+    <div class="ts-qrs" id="ts-qrs">
+      <button class="ts-qr" data-t="PhD Thesis Help">📚 PhD Thesis</button>
+      <button class="ts-qr" data-t="Plagiarism Removal">🔍 Plagiarism</button>
+      <button class="ts-qr" data-t="Scopus Publication">🏆 Scopus</button>
+      <button class="ts-qr" data-t="Website Development">💻 Website</button>
+      <button class="ts-qr" data-t="Get a Free Quote">💰 Free Quote</button>
+    </div>
+
+    <div class="ts-inp-wrap">
+      <textarea id="ts-inp" placeholder="Type your question…" rows="1"></textarea>
+      <button id="ts-snd" aria-label="Send">
+        <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="ts-foot">
+      TechScholar AI &nbsp;·&nbsp; <a href="tel:+918541867300">+91 85418-67300</a>
+    </div>
+
+  </div>
+
+  <button id="ts-toggle" aria-label="Chat with TechScholar">
+    <span class="t-ico" id="t-ico">
+      <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+      </svg>
+    </span>
+    <span class="t-badge" id="t-badge">1</span>
+  </button>
+</div>
+
+<script>
+(function(){
+
+  const SYS = `You are TechScholar's expert consultant chatbot. Help clients with:
+- PhD Thesis & Dissertation Writing (topic selection, literature review, methodology, data analysis)
+- Scopus/WoS Journal Publication (journal selection, manuscript strengthening, reviewer response)
+- Plagiarism Check & Removal (Turnitin, iThenticate, similarity reduction)
+- Thesis-to-Article Conversion
+- Research Paper Writing (original, case study, review, conference papers)
+- Book Publication (ISBN, print & digital, global distribution)
+- Increase Citation Score (research profiling, citation audit, ethical enhancement)
+- Patent Filing (patentability check, IP protection, patent drafting)
+- Website Development & Designing (UI/UX, front-end, back-end, SEO, hosting)
+- SEO Services & Content Writing
+
+CONTACT: Phone +91 85418-67300 | Email Techscholar00@gmail.com | WhatsApp wa.me/918541867300 | Address SCO 267 First Floor Sector 32D Chandigarh | Hours Mon-Sat 9AM-8PM IST.
+
+RULES:
+- Warm, consultative, professional — never pushy
+- Academic tone for researchers, business tone for web/SEO clients
+- Keep replies concise (3-5 sentences max). Always end with one clarifying question
+- Never guarantee journal acceptance or specific Google rankings
+- Never give exact pricing — say "pricing depends on scope, share your requirement for a quote"
+- When user seems ready, ask for their email or WhatsApp number
+- On the very FIRST message: greet warmly and ask if they are a PhD Scholar, Academic Institution, Business Owner, or Individual Professional`;
+
+  let hist=[], isOpen=false, busy=false;
+
+  const win  = document.getElementById('ts-win');
+  const msgs = document.getElementById('ts-msgs');
+  const inp  = document.getElementById('ts-inp');
+  const snd  = document.getElementById('ts-snd');
+  const qrs  = document.getElementById('ts-qrs');
+  const ico  = document.getElementById('t-ico');
+  const badge= document.getElementById('t-badge');
+
+  // ── Events ──────────────────────────────────────────────
+  document.getElementById('ts-toggle').onclick = ()=> isOpen ? doClose() : doOpen();
+  document.getElementById('ts-xbtn').onclick   = doClose;
+  snd.onclick = send;
+
+  inp.addEventListener('keydown', e=>{
+    if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); send(); }
+  });
+  inp.addEventListener('input', function(){
+    this.style.height = 'auto';
+    this.style.height = Math.min(this.scrollHeight, 70) + 'px';
+  });
+
+  document.querySelectorAll('.ts-qr').forEach(b => b.onclick = ()=>{
+    inp.value = b.dataset.t;
+    send();
+    qrs.style.display = 'none';
+  });
+
+  // ── Open / Close ─────────────────────────────────────────
+  function doOpen(){
+    isOpen = true;
+    win.classList.remove('ts-hide');
+    badge.style.display = 'none';
+    ico.innerHTML = `<svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>`;
+    if(!msgs.children.length){
+      addBot(`👋 Welcome to **TechScholar**!\n\nI'm your academic & web services consultant. To guide you best, are you a:\n\n• 🎓 **PhD Scholar / Researcher**\n• 🏛️ **Academic Institution**\n• 💼 **Business Owner / Startup**\n• 👤 **Individual Professional**\n\nOr tap a quick option below!`);
+    }
+    setTimeout(()=> inp.focus(), 200);
+  }
+
+  function doClose(){
+    isOpen = false;
+    win.classList.add('ts-hide');
+    ico.innerHTML = `<svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>`;
+  }
+
+  // ── Helpers ──────────────────────────────────────────────
+  function gt(){
+    return new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
+  }
+
+  function esc(t){
+    const d = document.createElement('div');
+    d.textContent = t;
+    return d.innerHTML;
+  }
+
+  function fmt(t){
+    t = t.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    t = t.replace(/^[•\-]\s(.+)$/gm, '<li>$1</li>');
+    t = t.replace(/(<li>[\s\S]*?<\/li>)+/g, '<ul>$&</ul>');
+    t = t.replace(/\n/g, '<br>');
+    return t;
+  }
+
+  function scroll(){
+    setTimeout(()=>{ msgs.scrollTop = msgs.scrollHeight; }, 50);
+  }
+
+  // ── Render messages ──────────────────────────────────────
+  function addUser(t){
+    const d = document.createElement('div');
+    d.className = 'ts-msg ts-u';
+    d.innerHTML = `<div class="ts-bbl">${esc(t)}</div><div class="ts-time">${gt()}</div>`;
+    msgs.appendChild(d);
+    scroll();
+  }
+
+  function addBot(t){
+    const d = document.createElement('div');
+    d.className = 'ts-msg ts-b';
+    d.innerHTML = `<div class="ts-bbl">${fmt(t)}</div><div class="ts-time">${gt()}</div>`;
+    msgs.appendChild(d);
+    scroll();
+  }
+
+  function showTyping(){
+    const d = document.createElement('div');
+    d.className = 'ts-msg ts-b';
+    d.id = 'ts-typ';
+    d.innerHTML = `<div class="ts-typ-wrap"><span></span><span></span><span></span></div>`;
+    msgs.appendChild(d);
+    scroll();
+  }
+
+  function hideTyping(){
+    const el = document.getElementById('ts-typ');
+    if(el) el.remove();
+  }
+
+  // ── Send message ─────────────────────────────────────────
+  async function send(){
+    const text = inp.value.trim();
+    if(!text || busy) return;
+
+    qrs.style.display = 'none';
+    addUser(text);
+    inp.value = '';
+    inp.style.height = 'auto';
+    hist.push({ role:'user', content:text });
+
+    busy = true;
+    snd.disabled = true;
+    showTyping();
+
+    try{
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method  : 'POST',
+        headers : {
+          'Content-Type' : 'application/json',
+          'Authorization': `Bearer ${KEY}`
+        },
+        body: JSON.stringify({
+          model      : 'llama-3.3-70b-versatile',
+          messages   : [{ role:'system', content:SYS }, ...hist],
+          max_tokens : 400,
+          temperature: 0.7
+        })
+      });
+
+      if(!res.ok){
+        const e = await res.json().catch(()=>({}));
+        throw new Error(e.error?.message || `HTTP ${res.status}`);
+      }
+
+      const data  = await res.json();
+      const reply = data.choices?.[0]?.message?.content
+                    || 'Sorry, could not get a response. Please contact us directly.';
+
+      hist.push({ role:'assistant', content:reply });
+      hideTyping();
+      addBot(reply);
+
+    } catch(e){
+      hideTyping();
+      addBot(
+        e.message.includes('rate_limit')
+          ? '⚠️ I\'m a bit busy right now! Please try again shortly or call **+91 85418-67300**.'
+          : '⚠️ Connection issue. Please reach us at:\n\n📞 **+91 85418-67300**\n✉️ **Techscholar00@gmail.com**\n💬 **WhatsApp us anytime**'
+      );
+    } finally{
+      busy = false;
+      snd.disabled = false;
+      inp.focus();
+    }
+  }
+
+})();
+</script>
+
+
+
+
+	
+
+
+
+
+
+
+
+
 	<!-- Meta Pixel Code -->
 	<script>
 		!function (f, b, e, v, n, t, s) {
@@ -4504,7 +4845,7 @@ Website Devlopment">Journal
 </script>
 	<!-- Click to Chat - https://holithemes.com/plugins/click-to-chat/  v4.24 -->
 	<div class="ht-ctc ht-ctc-chat ctc-analytics ctc_wp_desktop style-2  " id="ht-ctc-chat"
-		style="display: none;  position: fixed; bottom: 15px; right: 15px;">
+		style="display: none;  position: fixed; bottom: 15px; left: 15px;">
 		<div class="ht_ctc_style ht_ctc_chat_style">
 			<div style="display: flex; justify-content: center; align-items: center; background-color: #25D366; border-radius: 10px; "
 				class="ctc-analytics ctc_s_2">
@@ -4569,7 +4910,7 @@ Website Devlopment">Journal
 	<link rel="stylesheet" id="elementor-post-10108-css" href="css/post-10108.css" type="text/css" media="all">
 	<script type="text/javascript" id="ht_ctc_app_js-js-extra">
 		/* <![CDATA[ */
-		var ht_ctc_chat_var = { "number": "918541867300", "pre_filled": "", "dis_m": "show", "dis_d": "show", "css": "display: none; cursor: pointer; z-index: 99999999;", "pos_d": "position: fixed; bottom: 15px; right: 15px;", "pos_m": "position: fixed; bottom: 15px; right: 15px;", "schedule": "no", "se": "150", "ani": "no-animation", "url_target_d": "_blank", "ga": "yes", "fb": "yes", "g_init": "default", "g_an_event_name": "click to chat", "pixel_event_name": "Click to Chat by HoliThemes" };
+		var ht_ctc_chat_var = { "number": "918541867300", "pre_filled": "", "dis_m": "show", "dis_d": "show", "css": "display: none; cursor: pointer; z-index: 99999999;", "pos_d": "position: fixed; bottom: 15px; le: 15px;", "pos_m": "position: fixed; bottom: 15px; right: 15px;", "schedule": "no", "se": "150", "ani": "no-animation", "url_target_d": "_blank", "ga": "yes", "fb": "yes", "g_init": "default", "g_an_event_name": "click to chat", "pixel_event_name": "Click to Chat by HoliThemes" };
 		var ht_ctc_variables = { "g_an_event_name": "click to chat", "pixel_event_type": "trackCustom", "pixel_event_name": "Click to Chat by HoliThemes", "g_an_params": ["g_an_param_1", "g_an_param_2", "g_an_param_3"], "g_an_param_1": { "key": "number", "value": "{number}" }, "g_an_param_2": { "key": "title", "value": "{title}" }, "g_an_param_3": { "key": "url", "value": "{url}" }, "pixel_params": ["pixel_param_1", "pixel_param_2", "pixel_param_3", "pixel_param_4"], "pixel_param_1": { "key": "Category", "value": "Click to Chat for WhatsApp" }, "pixel_param_2": { "key": "ID", "value": "{number}" }, "pixel_param_3": { "key": "Title", "value": "{title}" }, "pixel_param_4": { "key": "URL", "value": "{url}" } };
 		//# sourceURL=ht_ctc_app_js-js-extra
 		/* ]]> */
