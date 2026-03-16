@@ -20,24 +20,8 @@
 
 
 
-
 <style>
 #ts-cw *{box-sizing:border-box;margin:0;padding:0}
-.ts-bbl{
-	padding: 6px 14px !important;
-}
-.ts-msgs{
-	padding: 6px 14px !important;
-}
-.ts-qrs{
-	padding: 14px !important;
-}
-.ts-hdr{
-	padding: 14px !important;
-}
-.ts-qr{
-	padding: 2px 8px !important;
-}
 #ts-cw{position:fixed;bottom:20px;right:20px;z-index:999999;display:flex;flex-direction:column;align-items:flex-end;gap:10px;font-family:'Segoe UI',system-ui,-apple-system,sans-serif}
 
 #ts-toggle{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#f59e0b 0%,#d97706 100%);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(245,158,11,.5),0 2px 6px rgba(0,0,0,.2);transition:transform .25s ease,box-shadow .25s ease;position:relative;flex-shrink:0}
@@ -49,7 +33,7 @@
 #ts-win{width:320px;height:440px;background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.14),0 2px 10px rgba(0,0,0,.07);display:flex;flex-direction:column;overflow:hidden;transform-origin:bottom right;transition:transform .3s cubic-bezier(.34,1.4,.64,1),opacity .3s ease;border:1px solid rgba(0,0,0,.07)}
 #ts-win.ts-hide{transform:scale(.88) translateY(16px);opacity:0;pointer-events:none}
 
-.ts-hdr{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);padding:11px 14px;display:flex;align-items:center;gap:10px;flex-shrink:0;position:relative}
+.ts-hdr{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%);padding:14px !important;display:flex;align-items:center;gap:10px;flex-shrink:0;position:relative}
 .ts-hdr::after{content:'';position:absolute;bottom:0;left:14px;right:14px;height:1px;background:linear-gradient(90deg,transparent,rgba(245,158,11,.4),transparent)}
 .ts-av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;box-shadow:0 2px 8px rgba(245,158,11,.4);border:2px solid rgba(255,255,255,.15)}
 .ts-hdr-info{flex:1;min-width:0}
@@ -59,7 +43,7 @@
 .ts-xbtn{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.1);width:26px;height:26px;border-radius:6px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);transition:all .2s;flex-shrink:0}
 .ts-xbtn:hover{background:rgba(255,255,255,.2);color:#fff;border-color:rgba(255,255,255,.2)}
 
-.ts-msgs{flex:1;overflow-y:auto;padding:11px;display:flex;flex-direction:column;gap:8px;background:#f9fafb;scroll-behavior:smooth}
+.ts-msgs{flex:1;overflow-y:auto;padding:14px !important;display:flex;flex-direction:column;gap:8px;background:#f9fafb;scroll-behavior:smooth}
 .ts-msgs::-webkit-scrollbar{width:3px}
 .ts-msgs::-webkit-scrollbar-track{background:transparent}
 .ts-msgs::-webkit-scrollbar-thumb{background:#e5e7eb;border-radius:2px}
@@ -68,7 +52,7 @@
 @keyframes ts-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .ts-msg.ts-u{align-items:flex-end}
 .ts-msg.ts-b{align-items:flex-start}
-.ts-bbl{max-width:82%;padding:8px 11px;border-radius:12px;font-size:12.5px;line-height:1.5;word-break:break-word;font-family:inherit}
+.ts-bbl{max-width:82%;padding:6px 14px !important;border-radius:12px;font-size:12.5px;line-height:1.5;word-break:break-word;font-family:inherit}
 .ts-msg.ts-u .ts-bbl{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;border-bottom-right-radius:3px;box-shadow:0 2px 8px rgba(217,119,6,.25)}
 .ts-msg.ts-b .ts-bbl{background:#fff;color:#1f2937;border-bottom-left-radius:3px;box-shadow:0 1px 4px rgba(0,0,0,.08);border:1px solid #f0f0f0}
 .ts-msg.ts-b .ts-bbl strong{color:#92400e}
@@ -82,8 +66,8 @@
 .ts-typ-wrap span:nth-child(3){animation-delay:.4s}
 @keyframes ts-dot{0%,60%,100%{transform:translateY(0);opacity:.35}30%{transform:translateY(-5px);opacity:1}}
 
-.ts-qrs{display:flex;flex-wrap:wrap;gap:5px;padding:7px 11px;background:#f9fafb;border-top:1px solid #f0f0f0}
-.ts-qr{background:#fff;border:1.5px solid #f59e0b;color:#92400e;font-size:11px;font-weight:600;padding:4px 10px;border-radius:18px;cursor:pointer;transition:all .18s;white-space:nowrap;font-family:inherit}
+.ts-qrs{display:flex;flex-wrap:wrap;gap:5px;padding:14px !important;background:#f9fafb;border-top:1px solid #f0f0f0}
+.ts-qr{background:#fff;border:1.5px solid #f59e0b;color:#92400e;font-size:11px;font-weight:600;padding:2px 8px !important;border-radius:18px;cursor:pointer;transition:all .18s;white-space:nowrap;font-family:inherit}
 .ts-qr:hover{background:#f59e0b;color:#fff;transform:translateY(-1px);box-shadow:0 3px 10px rgba(245,158,11,.3)}
 
 .ts-inp-wrap{padding:8px 10px;background:#fff;border-top:1px solid #f0f0f0;display:flex;gap:7px;align-items:flex-end;flex-shrink:0}
@@ -191,7 +175,7 @@ RULES:
   const ico  = document.getElementById('t-ico');
   const badge= document.getElementById('t-badge');
 
-  // ── Events ──────────────────────────────────────────────
+  // ── Events ───────────────────────────────────────────────
   document.getElementById('ts-toggle').onclick = ()=> isOpen ? doClose() : doOpen();
   document.getElementById('ts-xbtn').onclick   = doClose;
   snd.onclick = send;
@@ -228,17 +212,15 @@ RULES:
     ico.innerHTML = `<svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>`;
   }
 
-  // ── Helpers ──────────────────────────────────────────────
+  // ── Helpers ───────────────────────────────────────────────
   function gt(){
     return new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'});
   }
-
   function esc(t){
     const d = document.createElement('div');
     d.textContent = t;
     return d.innerHTML;
   }
-
   function fmt(t){
     t = t.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     t = t.replace(/^[•\-]\s(.+)$/gm, '<li>$1</li>');
@@ -246,43 +228,36 @@ RULES:
     t = t.replace(/\n/g, '<br>');
     return t;
   }
-
   function scroll(){
     setTimeout(()=>{ msgs.scrollTop = msgs.scrollHeight; }, 50);
   }
 
-  // ── Render messages ──────────────────────────────────────
+  // ── Render ────────────────────────────────────────────────
   function addUser(t){
     const d = document.createElement('div');
     d.className = 'ts-msg ts-u';
     d.innerHTML = `<div class="ts-bbl">${esc(t)}</div><div class="ts-time">${gt()}</div>`;
-    msgs.appendChild(d);
-    scroll();
+    msgs.appendChild(d); scroll();
   }
-
   function addBot(t){
     const d = document.createElement('div');
     d.className = 'ts-msg ts-b';
     d.innerHTML = `<div class="ts-bbl">${fmt(t)}</div><div class="ts-time">${gt()}</div>`;
-    msgs.appendChild(d);
-    scroll();
+    msgs.appendChild(d); scroll();
   }
-
   function showTyping(){
     const d = document.createElement('div');
     d.className = 'ts-msg ts-b';
     d.id = 'ts-typ';
     d.innerHTML = `<div class="ts-typ-wrap"><span></span><span></span><span></span></div>`;
-    msgs.appendChild(d);
-    scroll();
+    msgs.appendChild(d); scroll();
   }
-
   function hideTyping(){
     const el = document.getElementById('ts-typ');
     if(el) el.remove();
   }
 
-  // ── Send message ─────────────────────────────────────────
+  // ── Send ──────────────────────────────────────────────────
   async function send(){
     const text = inp.value.trim();
     if(!text || busy) return;
@@ -298,17 +273,12 @@ RULES:
     showTyping();
 
     try{
-      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      // ↓ calls your /api/chat route — API key stays safe on server
+      const res = await fetch('/api/chat', {
         method  : 'POST',
-        headers : {
-          'Content-Type' : 'application/json',
-          'Authorization': `Bearer ${KEY}`
-        },
-        body: JSON.stringify({
-          model      : 'llama-3.3-70b-versatile',
-          messages   : [{ role:'system', content:SYS }, ...hist],
-          max_tokens : 400,
-          temperature: 0.7
+        headers : { 'Content-Type': 'application/json' },
+        body    : JSON.stringify({
+          messages: [{ role:'system', content:SYS }, ...hist]
         })
       });
 
@@ -341,8 +311,6 @@ RULES:
 
 })();
 </script>
-
-
 
 
 	
