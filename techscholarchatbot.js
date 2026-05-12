@@ -37,9 +37,9 @@ SERVICES YOU REPRESENT:
 - SEO Services (technical audit, on-page, backlinks, local SEO)
 
 CONTACT INFO:
-- Phone: +91 85418-67300
+- Phone: +91 92530-06673
 - Email: Techscholar00@gmail.com
-- WhatsApp: https://wa.me/918541867300
+- WhatsApp: https://wa.me/919253006673
 - Address: SCO 267 First Floor, Sector 32D, Chandigarh
 - Working Hours: Mon–Sat, 9AM–8PM IST
 - Social: Facebook, Instagram (@right.write.hub), LinkedIn (right-write-hub)
@@ -499,7 +499,7 @@ On first message, greet warmly and ask: Are you a PhD Scholar/Researcher, Academ
         </div>
 
         <div class="ts-footer-note">
-          Powered by TechScholar AI · <a href="tel:+918541867300">+91 85418-67300</a>
+          Powered by TechScholar AI · <a href="tel:+919253006673">+91 92530-06673</a>
         </div>
       </div>
 
@@ -699,7 +699,7 @@ On first message, greet warmly and ask: Are you a PhD Scholar/Researcher, Academ
       }
 
       const data = await response.json();
-      const reply = data.choices?.[0]?.message?.content || "I'm sorry, I couldn't get a response. Please try again or contact us at +91 85418-67300.";
+      const reply = data.choices?.[0]?.message?.content || "I'm sorry, I couldn't get a response. Please try again or contact us at +91 92530-06673.";
 
       conversationHistory.push({ role: "assistant", content: reply });
 
@@ -713,7 +713,7 @@ On first message, greet warmly and ask: Are you a PhD Scholar/Researcher, Academ
       } else if (error.message.includes("rate_limit")) {
         errorMsg = "⚠️ I'm a bit busy right now! Please try again in a moment or contact us directly:";
       }
-      appendBotMessage(`${errorMsg}\n\n📞 **+91 85418-67300**\n✉️ **Techscholar00@gmail.com**\n💬 **WhatsApp us instantly**`);
+      appendBotMessage(`${errorMsg}\n\n📞 **+91 92530-06673**\n✉️ **Techscholar00@gmail.com**\n💬 **WhatsApp us instantly**`);
     } finally {
       isTyping = false;
       sendBtn.disabled = false;
